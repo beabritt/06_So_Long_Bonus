@@ -6,7 +6,7 @@
 /*   By: becamino <becamino@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 18:26:49 by becamino          #+#    #+#             */
-/*   Updated: 2024/01/11 16:37:58 by becamino         ###   ########.fr       */
+/*   Updated: 2024/04/16 14:42:59 by becamino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void	ft_createmap(char *argv, t_map **map)
 	fd = open(argv, O_RDONLY);
 	if (fd < 0)
 	{
-		ft_printf("file could not be opened\n");
+		ft_printf("file could not be opened D:\n");
 		exit(EXIT_FAILURE);
 	}
 	line = get_next_line(fd);

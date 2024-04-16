@@ -6,7 +6,7 @@
 /*   By: becamino <becamino@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 13:09:55 by becamino          #+#    #+#             */
-/*   Updated: 2024/01/11 16:16:35 by becamino         ###   ########.fr       */
+/*   Updated: 2024/04/16 14:45:54 by becamino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int	checkargv(char *argv)
 
 	ber = ".ber";
 	x = ft_strlen(argv) - 4;
-	if (ft_strncmp(&argv[x], ber, 3) == 0)
+	if (ft_strncmp(&argv[x], ber, 4) == 0)
 		return (NO_ERROR);
 	else
 		return (ERROR);
