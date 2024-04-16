@@ -6,7 +6,7 @@
 /*   By: becamino <becamino@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 15:54:35 by becamino          #+#    #+#             */
-/*   Updated: 2024/03/13 19:25:29 by becamino         ###   ########.fr       */
+/*   Updated: 2024/04/16 13:37:09 by becamino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,11 +67,10 @@ void	init_floor(t_game *game)
 	}
 }
 
-
 void	init_map(t_game *game, t_map *map)
 {
 	load_images(game);
 	init_floor(game);
 	init_wallsandexit(game, map);
 	init_playerandcollectibles(game, map);
-}	
+}

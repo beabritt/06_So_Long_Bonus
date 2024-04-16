@@ -6,7 +6,7 @@
 /*   By: becamino <becamino@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 14:33:45 by becamino          #+#    #+#             */
-/*   Updated: 2024/03/13 18:00:01 by becamino         ###   ########.fr       */
+/*   Updated: 2024/04/16 13:37:42 by becamino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ int	load_player_images(t_game *game)
 
 void	load_images(t_game *game)
 {
-	game->counter.image =  mlx_xpm_file_to_image(game->mlx_ptr, CNTR,
+	game->counter.image = mlx_xpm_file_to_image(game->mlx_ptr, CNTR,
 			&game->counter.width, &game->counter.width);
 	if (!game->counter.image)
 		fast_close_images(game);

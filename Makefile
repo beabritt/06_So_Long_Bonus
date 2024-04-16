@@ -17,8 +17,8 @@ CC  =   gcc
 CFLAGS  =   -Wall -Wextra -Werror  -I ./include -I ./libft/ ${DEBUG}
 MLX = ./mlx/libmlx.a
 MLXFLAGS = -lmlx -framework OpenGL -framework AppKit
-#DEBUG   =   -g3 -fsanitize=address
-DEBUG   =   
+DEBUG   =   -g3 -fsanitize=address
+# DEBUG   =   
 NAME    =   so_long
 
 # sources and objects.

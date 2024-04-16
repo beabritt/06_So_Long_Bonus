@@ -6,7 +6,7 @@
 /*   By: becamino <becamino@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 13:34:26 by becamino          #+#    #+#             */
-/*   Updated: 2024/04/16 13:29:35 by becamino         ###   ########.fr       */
+/*   Updated: 2024/04/16 13:37:19 by becamino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ t_game	*ft_gamedata(t_map *map, t_game *game)
 	game->map_width = ft_strlen(aux->line);
 	return (game);
 }
+
 void	print_steps(t_game *game)
 {
 	char	*str;
@@ -106,10 +107,6 @@ void	init_so_long(t_map *map, t_game *game)
 	mlx_hook(game->mlx_win, DESTROY, 0, fast_close, game);
 	mlx_loop(game->mlx_ptr);
 }
-void	leaks()
-{
-	system("leaks -q so_long");
-}
 
 int	main(int argc, char **argv)
 {
@@ -118,7 +115,6 @@ int	main(int argc, char **argv)
 
 	map = NULL;
 	game = NULL;
-	atexit(leaks);
 	if (argc == 2)
 	{
 		if (checkargv(argv[1]) == ERROR)
